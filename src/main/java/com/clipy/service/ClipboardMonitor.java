@@ -32,6 +32,7 @@ public class ClipboardMonitor implements Runnable {
                 }
                 Thread.sleep(500);
             } catch (Exception e) {
+                System.err.println("ClipboardMonitor error: " + e.getMessage());
             }
         }
     }
