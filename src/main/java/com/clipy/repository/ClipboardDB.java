@@ -36,7 +36,6 @@ public class ClipboardDB {
 
     public ClipboardDB(){
         ClipboardDB.createTableIfNotExists();
-        System.out.println("created successfully");
     }
     public static void createTableIfNotExists() {
         String sql = """
