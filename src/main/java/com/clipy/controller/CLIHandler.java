@@ -33,6 +33,7 @@ public class CLIHandler {
     private void printList() {
         List<ClipboardItem> items = service.getAllItems();
         for (ClipboardItem clip : items) {
+            System.out.println("\n" + "-".repeat(10));
             System.out.println(clip);
         }
     }
@@ -44,6 +45,7 @@ public class CLIHandler {
     private void printByType(String type){
         List<ClipboardItem> items = service.getByType(type);
         for (ClipboardItem item : items){
+            System.out.println("\n" + "-".repeat(10));
             System.out.println(item);
         }
     }
